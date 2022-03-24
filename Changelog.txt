@@ -2,3 +2,20 @@
     Updated remove_redundancies(df_name) 
         defined df_new as dropping the columns from the dataframe defined in the parameter "df_name". 
         The columns dropped are defined in the list redundant_columns.
+
+24/03/2022: (Mads)
+    Updated remove_redundancies(df_name)
+        Though it looked to be working in Klaus' iteration, the result of the function was not being correctly saved
+        and calling upon 'df' later would just call on the imported version, not the processed one.
+
+    Started removing index column <-- Work in Progress
+        When using the pd.read_csv() function, a new column is created that cannot be called upon, this is the index column
+        and is what I am trying to remove. Though it is not directly influencing our data or the way we wish to progress 
+        with our machine learning, it is just quite cluttered to look at because we have so many rows. I've not yet figured
+        out how to make it work correctly, I can remove the index column during import, but then the 'id' column takes its
+        place and creates a whole new slew of problems. for now they are muted as they influence the other code, feel free
+        to fix if you want, I will try to fix at a later date if not resolved by then.
+
+    Started importing for ML + TTS
+        Imported train test split (TTS) and performed this on the data, considering the target value to be the
+        'stop_outcome' column, and the data to be the rest.
