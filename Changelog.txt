@@ -1,4 +1,4 @@
-24/03/2022: (Klaus) - 
-    Updated remove_redundancies(df_name), 
-    defined df_new - dropping the columns from the dataframe defined in the parameter "df_name". 
-    The columns dropped are deifned in the list redundant_columns.
+24/03/2022: (Klaus) 
+    Updated remove_redundancies(df_name) 
+        defined df_new as dropping the columns from the dataframe defined in the parameter "df_name". 
+        The columns dropped are defined in the list redundant_columns.
