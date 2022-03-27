@@ -19,3 +19,17 @@
     Started importing for ML + TTS
         Imported train test split (TTS) and performed this on the data, considering the target value to be the
         'stop_outcome' column, and the data to be the rest.
+
+27/03/2022: (Mads)
+    Get dummies
+        Created dummy values for all of the columns which contained non-numerical values, spoiler alert it was all of them.
+        In total, 523 columns were added.
+
+    Remove NaN values 
+        Removed any NaN values present in the 'stop_outcome' column as the target value is always needed in order to create
+        a prediction. The same was done for Xd (Xdummy) to remove any NaN values, but none were present.
+
+    Created random forest classifier
+        To test the getdummies, I created a basic random forest classifier and only tested it once, reason being that it
+        took almost 34 minutes to do so, and returned the same values for train and test, so whether or not they are correct
+        is also unlikely. Perhaps someone knows of a way to optimize this? maybe our professor if not one of us?
