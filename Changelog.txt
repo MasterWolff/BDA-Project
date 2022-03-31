@@ -45,4 +45,7 @@
 
 30/03/2022 (Mads)
     Visualizing driver race distribution
+
+31/03/2022 (Mads)
+    Improving data visualisation, that's it.
         
