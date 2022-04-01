@@ -36,16 +36,29 @@
 
 28/03/2022: (Mads)
     Dataset downsize for testing
-        created a copy of the dataframe using the first 100000 rows, this referred to as 'df_testing' reduces run time of analysis by like 1000000%
+        created a copy of the dataframe using the first 100000 rows, this referred to as 'df_testing' reduces run time of 
+        analysis by like 1000000%
     Testing parameters 
         testing different values for the max_depth parameter in the random forest, see test_parameter function
     WIP: Test parameters function
-        began creating a version where the parameters you wish to test and the values with which you want to test them can be selected, currently not working, might
-        also not be necessary, just makes it easier to test them.
+        began creating a version where the parameters you wish to test and the values with which you want to test them can 
+        be selected, currently not working, might also not be necessary, just makes it easier to test them.
 
 30/03/2022 (Mads)
     Visualizing driver race distribution
 
 31/03/2022 (Mads)
-    Improving data visualisation, that's it.
+    Improving data visualisation of driver race, that's it.
+
+1/04/2022 (Mads)
+    RandomForestClassifier parameter optimisation
+	    Added a couple lines of code sourced from here: 
+        https://www.kaggle.com/code/funxexcel/p3-random-forest-tuning-randomizedsearchcv/notebook that is able to test all
+        the different combinations of parameter values and identify the ones which yield the most accurate results. Worth it?
+        fuck no. it took 54 minutes for the code to run only for it to result in an accuracy score that was only 0.004 higher
+        than when I just tested random numbers for the max_depth parameter. unsure if it is worth testing it again with another
+        framework, using randomized search CV instead of the Grid search CV that I used this time? In any case I think it's
+        worth noting in our report, perhaps in an appendix or something, but definitely not worth doing for the other models
+        we intend to do. pro strat --> dont run all cells because it will take an hour in total (at least on my computer so
+        god knows how long it will take for whoever else might make the mistake of optimizing the parameters).
         
