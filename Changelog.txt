@@ -68,4 +68,12 @@
         that and left it over night because big brain :) it is however a little suspicious that the random forest got the same
         accuracy as the KNN, however it doesnt seem as though there is an issue with the code? so it might just be a coincidence
         I'll redo the random forest overnight because there was an error last time with one of the data values, just to check!
+
+26/04/2022
+    parameter optimization:
+        I added the third model we use, which is the GradientBoostingClassifier(), and optimized its parameters
+    feature importance visualisation:
+        Started trying to identify and plot the feature importance for the different models, to see what has the largest influence on the outcome, fx. driver race
+    code cleanup:
+        Removing old versions of code and redundant code blocks, added titles above each block that signify what they do.
         
