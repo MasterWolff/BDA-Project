@@ -62,14 +62,14 @@
         we intend to do. pro strat --> dont run all cells because it will take an hour in total (at least on my computer so
         god knows how long it will take for whoever else might make the mistake of optimizing the parameters).
 
-6/04/2022
+6/04/2022 (Mads)
     KNN and KNN parameter optimization
         I added in a KNN model for the data, and did some parameter optimization, took 262 minutes to do but I anticipated
         that and left it over night because big brain :) it is however a little suspicious that the random forest got the same
         accuracy as the KNN, however it doesnt seem as though there is an issue with the code? so it might just be a coincidence
         I'll redo the random forest overnight because there was an error last time with one of the data values, just to check!
 
-26/04/2022
+26/04/2022 (Mads)
     parameter optimization:
         I added the third model we use, which is the GradientBoostingClassifier(), and optimized its parameters
     feature importance visualisation:
@@ -77,3 +77,5 @@
     code cleanup:
         Removing old versions of code and redundant code blocks, added titles above each block that signify what they do.
         
+2/05/2022 (Mads)
+    Improved feature importance + feature importance visualization
